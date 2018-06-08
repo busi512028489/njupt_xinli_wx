@@ -1,0 +1,66 @@
+/* pages/login/login.wxss */
+.container{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #FFF5E1;
+}
+
+.text{
+  text-align: center;
+  font-size:40rpx;
+}
+
+.name{
+  margin-top:20rpx;
+  text-align: center;
+  font-size:60rpx;
+  margin-bottom:40rpx;
+}
+
+
+.swiper{
+  height: 436rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+   margin-bottom:80rpx;
+}
+
+.swiper image{
+  width: 550rpx;
+  height: 380rpx;
+}
+
+.center{
+  flex-direction: row;
+  position: absolute;
+  margin-left: 170rpx;
+}
+
+
+
+.login{
+  background: #DDAA00;
+  margin-top:40rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 400rpx;
+}
+
+.input{
+  width: 400rpx;
+}
+
+.start{
+  background: #f2f8fb;
+  margin-top:40rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 400rpx;
+}

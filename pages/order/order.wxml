@@ -1,0 +1,65 @@
+<!--pages/order/order.wxml-->
+<view class='content'>
+  <view class="swiper">
+    <image src="../../images/3.png" class="slide-image" />
+  </view>
+  <view class='solid'>
+    <view class='context'>
+      <text style="color:#886600">{{order.text1}}</text>
+    </view>
+    <view class='context2'>
+      <text style="color:#886600">{{order.text2}}</text>
+    </view>
+  </view>
+  <view class='title'>
+    <text style="color:#886600">{{order.title}}</text>
+  </view>
+  <view class='name'>
+    <text>{{info.name}}</text>
+  </view>
+  <view class='phone'>
+    <text>{{info.tel}}</text>
+  </view>
+  <view wx:if='{{order.arrange == 0}}'>
+    <view class='phone'>
+      <text>空余时间为:</text>
+    </view>
+    <block wx:for="{{order.timelist}}">
+      <view class='phone'>
+        <text>{{item}}</text>
+      </view>
+    </block>
+  </view>
+  <view wx:else='{{order.arrange == 1}}'>
+    <view class='phone'>
+      <text>已安排:  </text>
+      <text style="color:#886600">{{order.tea}}</text>
+      <text >为您咨询</text>
+    </view>
+    <view class='phone'>
+      <text>安排星期数：</text>
+      <text style="color:#886600">{{order.week1}}</text>
+    </view>
+    <view class='phone'>
+      <text>安排时间段：</text>
+      <block wx:for="{{order.time1}}">
+        <view style="color:#886600">{{item}}</view>
+      </block>
+    </view>
+    <view class='phone'>
+      <text>房间号：</text>
+       <text style="color:#886600">{{order.room}}</text>
+    </view>
+    <view class='phone'>
+      <text>安排日期：</text>
+      <text style="color:#886600">{{order.insertdate}}</text>
+    </view>
+  </view>
+
+  <view class='end'>
+    <text style="color:#886600">如有其它问题，请致电</text>
+  </view>
+  <view class='end2'>
+    <text style="color:#886600">025-8586-6359</text>
+  </view>
+</view>

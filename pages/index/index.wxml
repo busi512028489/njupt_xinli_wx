@@ -1,0 +1,56 @@
+<!--pages/my/m-index/m-index.wxml-->
+<!-- banner -->
+<view class='text'>
+  <text class='text-info'>个人信息</text>
+</view>
+<view class="swiper-container">
+  <view class="swiper">
+    <image src="../../images/2.png" class="slide-image" />
+  </view>
+</view>
+<view class='content'>
+  <view>
+    <text>{{info.name}}</text>
+  </view>
+  <view>
+    <text>{{info.sex}}</text>
+  </view>
+  <view>
+    <text>{{info.xh}}</text>
+  </view>
+  <view>
+    <text>{{info.tel}}</text>
+  </view>
+  <view>
+    <text>{{info.academy}}</text>
+  </view>
+
+  <view wx:if='{{newphone == 1}}' class='login center'>
+    <input type='text' placeholder='输入手机号' confirm-type='next' class='input' bindinput='inputPhone' value='{{phone}}'></input>
+    <text style="color:#886600" bindtab='sure'>  确认</text>
+  </view>
+
+  <view class='menu'>
+    <view class='menu-list' bindtap='create'>
+      <text>预约</text>
+    </view>
+    <view class='menu-list' bindtap='order'>
+      <text>查询</text>
+    </view>
+    <view class='menu-list' bindtap='update'>
+      <text>登出</text>
+    </view>
+  </view>
+  <view class='name'>
+    <text style="color:#886600">南京邮电大学心理健康教育与咨询中心</text>
+  </view>
+  <view class='address'>
+    <text>仙林校区 大学生活动中心 108室 109室</text>
+  </view>
+  <view class='address'>
+    <text>三牌楼校区 行政南楼 211室 311室</text>
+  </view>
+  <view class='address'>
+    <text>205 8586 6359</text>
+  </view>
+</view>

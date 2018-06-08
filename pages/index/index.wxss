@@ -1,0 +1,76 @@
+/**index.wxss**/  
+.login{
+  background: #DDAA00;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 400rpx;
+}
+
+ .center{
+  
+  margin-left: 170rpx;
+} 
+
+.text{
+  text-align: center;
+  background: #FFF5E1;
+}
+
+.text-info{
+  font-size: 50rpx;
+}
+
+.swiper-container{
+  background: #fff;
+}
+
+swiper{
+  height: 436rpx;
+}
+
+.slide-image{
+  width: 750rpx;
+  height: 380rpx;
+}
+
+.content{
+  background: #FFF5E1;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  margin-bottom: 120rpx;
+  text-align: center;
+  height:100%;
+}
+
+.menu{
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.menu .menu-list{
+  font-size: 50rpx;
+  background: #DDAA00;
+  height: 60rpx;
+  width:240rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.menu .menu-list:last-child{
+  border-right: none;
+}
+.name{
+  margin-top:60rpx;
+  font-size:40rpx;
+}
+
+.address{
+  font-size:32rpx;
+}
+
+

@@ -1,0 +1,23 @@
+<!--pages/login/login.wxml-->  
+<view class='container'>
+  <view class='text'>
+    <text>南京邮电大学</text>
+  </view>
+  <view class='name'>
+    <text>心理咨询预约系统</text>
+  </view>
+  <view class="swiper">
+    <image src="../../images/1.png" />
+  </view>
+  <view class='center'>
+    <view class='login'>
+      <input type='text' placeholder='学号' confirm-type='next' class='input' bindinput='inputAccount' value='{{account}}'></input>
+    </view>
+    <view class='login'>
+      <input type='text' placeholder='密码(身份证后六位)' confirm-type='next' class='input' bindinput='inputPassword' value='{{password}}'></input>
+    </view>
+    <view class='start'>
+      <text bindtap='login'>登陆</text>
+    </view>
+  </view>
+</view>

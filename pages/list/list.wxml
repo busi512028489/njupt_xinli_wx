@@ -1,0 +1,20 @@
+<!--pages/order/order.wxml-->
+<view class='content'>
+  <view class="swiper">
+    <image src="../../images/3.png" class="slide-image" />
+  </view>
+  <view >
+    <view wx:if='{{list.length == 0}}'>
+      <view>暂无预约信息</view>
+    </view>
+    <view wx:else>
+    <view class='solid'> 预约列表</view>
+    <block wx:for="{{list}}">
+      <view class='content' bindtap='onclick' data-zcdate='{{item.zcdate}}'> 
+      <text>{{index+1}}.  {{item.zcdate}} ------</text>
+      <text  style="color:#886600" >{{item.status}}</text>
+      </view>
+    </block>
+    </view>
+  </view>
+</view>

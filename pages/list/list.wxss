@@ -1,0 +1,62 @@
+/* pages/order/order.wxss */
+.content{
+  background: #FFF5E1;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  height:110%;
+}
+
+.swiper{
+  height: 436rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:60rpx; 
+}
+
+.context{
+   margin-bottom:10rpx; 
+}
+
+.context2{
+  background: #FFF5E1;
+  text-align: center;
+  margin-bottom:20rpx;
+}
+
+.solid{
+  border-bottom: 1px solid #886600;
+  margin-bottom:30rpx; 
+  margin-top:30rpx; 
+}
+
+.title{
+  background: #FFF5E1;
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+.name{
+  margin-top:30rpx;
+  text-align: center;
+  font-size:35rpx;
+}
+
+.phone{
+  margin-top:10rpx;
+  text-align: center;
+  font-size:35rpx;
+}
+
+.end{
+  margin-top:80rpx;
+  text-align: center;
+  font-size:50rpx;
+}
+
+.end2{
+  margin-top:10rpx;
+  text-align: center;
+  font-size:50rpx;
+}

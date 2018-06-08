@@ -1,0 +1,33 @@
+<!--pages/create/create.wxml-->
+<view class='content'>
+  <block wx:for="{{question_list}}" wx:for-item="question_list">
+    <view>
+      <view style="color:#886600">{{index+1}}.{{question_list.name}}</view>
+    </view>
+    <block wx:for="{{question_list.value}}">
+      <view bindtap='bindstatus' data-name='{{question_list.name}}' data-index='{{index}}'>
+        <text class="{{question_list.choose == index?'radio hover':'radio'}}">*{{item}}</text>
+      </view>
+    </block>
+    <input wx:if="{{question_list.choose_val == '其他'}}" class='radio hover' type='text' placeholder='输入......' bindinput='inputOther' data-index='{{index}}'></input>
+  </block>
+  <view>
+    <picker mode="multiSelector" bindchange="chooseTime" range="{{timeArray}}">
+      <view style="color:#886600">5.您有空时间:(点此选择)</view>
+    </picker>
+    <block wx:for="{{chooseTime}}">
+      <view>
+      <text class='radio hover'>*{{item}}</text>
+      <text style="color:#FFF5E1">________</text>
+       <text class='radio1' bindtap='deleteTime' data-index='{{index}}'>X</text>
+      </view>
+    </block>
+    <view style="color:#886600">6.补充说明：</view>
+    <view class='login'>
+      <input type='text' placeholder='输入......' confirm-type='next' class='input' bindinput='inputContent' value='{{content}}'></input>
+    </view>
+    <view class='start'>
+      <text bindtap='login' style="color:#886600">提交</text>
+    </view>
+  </view>
+</view>
